@@ -1,0 +1,31 @@
+#preview-container {
+    width: 300px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #preview-image {
+    background-image: none;
+    background-color: #f1f1f1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  
+  #change-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Form Element</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/form.css">
+    
+
+    <!--awesome font cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--selectb picker-->
+    <link rel="stylesheet" href="css/picker.min.css"> 
+
+    <!--multiple picker installation-->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    
+    
+    
+</head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+          
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand" >
+            DrutoSoft
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+        <!--sidebar items start-->
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="index.html" target="_blank" >
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">calendar_today</span> Calender
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                location_on
+                </span> Map
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                widgets
+                </span>Widgets
+            </a>
+          </li>
+          <li class="sidebar-list-item" style="background-color:#2c419e;">
+            <a href="forms.html" target="_blank">
+              <span class="material-icons-outlined">
+                list_alt
+                </span> Form Elements
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="charts.html" target="_blank">
+              <span class="material-icons-outlined">poll</span> Charts
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                table_chart
+                </span> Tables
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                verified_user
+                </span> Authentication
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                email
+                </span> Email Template
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                auto_stories
+                </span> Extra Pages
+            </a>
+          </li>
+
+        </ul>
+        
+      </aside>
+
+
+
+
+<main class="main-container" style="background-color: white;">
+<div class="container" style="background-color: white; box-shadow: 0 20px 35px rgba(0,0,0,0.15)">
+  
+    <h2 style="padding: 4px;">Forms</h2>
+  
+  
+<p>Please fill in the information below. The field labels marked with * are required input fields.</p>
+
+<form action="/action_page.php" style="margin:auto;">
+    <div class="container" style="background-color: white; box-shadow: 0 20px 35px rgba(0,0,0,0.15)">
+        <div class="row">
+            <div class="col-half">
+                <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input class="input-field" type="text" placeholder="First Name" name="fname">
+                  </div>
+            </div>
+            <div class="col-half">
+                <div class="input-container">
+                    <i class="fa fa-user icon"></i>
+                    <input class="input-field" type="text" placeholder="Last Name" name="lname">
+                  </div>
+            </div>
+        </div>
+    
+    
+        <div class="row">
+            <div class="col-half">
+                <div class="input-container">
+                    <i class="fa fa-envelope icon"></i>
+                    <input class="input-field" type="email" placeholder="Email" name="email">
+                  </div>
+            </div>
+            <div class="col-half">
+                <div class="input-container">
+                    <i class="fa fa-phone icon"></i>
+                    <input class="input-field" type="tel" placeholder="Phone" name="phone">
+                  </div>
+            </div>
+        </div>
+    
+    
+        <div class="row">
+            <div class="col-half">
+                <div class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input class="input-field" type="password" placeholder="Password" name="psw">
+                  </div>
+            </div>
+            <div class="col-half">
+                <div class="input-container">
+                    <i class="fa fa-key icon"></i>
+                    <input class="input-field" type="password" placeholder="Confirm Password" name="psw-repeat">
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+<div class="container"style="background-color: white; box-shadow: 0 20px 35px rgba(0,0,0,0.15)">
+    <div class="row">
+        <div class="col-full">
+          <h3>Address</h3>
+            <div class="input-container">
+                <textarea id="address" name="address" style="height:200px"></textarea>
+              </div>
+        </div>
+    </div>
+</div>
+   
+  
+<br>
+    <div class="row">
+      <div class="col-half">
+
+        <!--Date of birth section start-->
+        <div class="container" style="background-color: white; box-shadow: 0 20px 35px rgba(0,0,0,0.15)">
+            <h3>Date of Birth</h3>
+        <section id="date-of-birth">
+          <fieldset>
+            <div class="field-inline-block">
+              <label style="padding: 12px 12px 12px 0;
+              display: inline-block">DD</label>
+              <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+            </div>
+            /
+            <div class="field-inline-block">
+              <label style="padding: 12px 12px 12px 0;
+              display: inline-block">MM</label>
+              <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+            </div>
+            /
+            <div class="field-inline-block">
+              <label style="padding: 12px 12px 12px 0;
+              display: inline-block">YYYY</label>
+              <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year" />
+            </div>
+            <p><small>E.g. 26/05/2023</small></p>
+          </fieldset></section>
+        </div>
+        
+      </div>
+      <!--Date of birth section end-->
+      <div class="col-half">
+        <div class="container"style="background-color: white; box-shadow: 0 20px 35px rgba(0,0,0,0.15)">
+                <h3>Date of birth</h3>
+                <input type="date" id="dob">
+                <br>
+        </div>
+      </div>
+    </div><br> 
+<input type="reset" class="button" value="Reset">
+<input type="submit" class="button" style="background-color: #45a049;"value="Submit"> 
+</form>
+</div>
+
+<br><br>
+<!--------------------------Upload Image Start-------------------------->
+<div class="container" style="background-color: white; margin:auto; box-shadow: 0 20px 35px rgba(0,0,0,0.15)">
+  
+    <h2 style="padding:2px;">Upload Image</h2>
+ 
+
+  <div class="row">
+    <div class="col-q"style="background-color: #ffffff; margin:auto;">
+      <div id="photo-upload">
+      <div class="image-container">
+        <figure class="up-image-container">
+          <img id="preview-image" src="images/boy.png" alt="Placeholder Image" >
+        </figure>
+
+        <input type="file" id="upload-input" accept="image/*" onchange="previewImage(event)">
+              <label for="upload-input" id="Lable">
+                <i class="fas fa-upload"></i> &nbsp;
+                Choose A Photo
+              </label>
+
+              <span id="remove-image" onclick="removePreview()">&#10006;</span>
+
+      </div>
+    </div>
+    </div>
+    <div class="col-q">
+        <div class="container" style="background-color: white; margin:auto; box-shadow: 0 20px 35px rgba(0,0,0,0.15);">
+            <div class="upload-container" >
+              <button id="upload-button" class="upload-button"><i class="fas fa-camera"></i>Upload Image</button>
+              <img id="uploaded-image" class="uploaded-image">
+              <button id="edit-button" class="edit-button"><i class="fas fa-edit"></i>Edit</button>
+              <input type="file" id="image-input" style="display: none;">
+            </div>
+            
+            <div class="preview-container" onclick="closePreview()">
+              <img id="preview-image" class="preview-image" src="">
+            </div>
+          </div>
+    </div>
+  </div>
+
+</div>
+<!--upload image end-->
+
+<br>
+<form action="/action_page.php">
+  <div class="row">
+    <div class="col-q">
+      <div class="container" style=" box-shadow: 0 20px 35px rgba(0,0,0,0.15);">
+        <p><b>Select Payment Method</b></p>
+      <label class="radiobtn-container">Visa
+        <input type="radio" checked="checked" name="radio">
+        <span class="Checkmark"></span>
+      </label>
+      <label class="radiobtn-container">Mastercard
+        <input type="radio" name="radio">
+        <span class="Checkmark"></span>
+      </label>
+      <label class="radiobtn-container">Apple Pay
+        <input type="radio" name="radio">
+        <span class="Checkmark"></span>
+      </label>
+      <label class="radiobtn-container">PayPal
+        <input type="radio" name="radio">
+        <span class="Checkmark"></span>
+      </label>
+      </div>
+    </div>
+
+    <div class="col-q">
+      <div class="container" style="box-shadow: 0 20px 35px rgba(0,0,0,0.15);">
+        <p><b>Choose Your Skill</b></p>
+<label class="checkbox-container">HTML
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+<label class="checkbox-container">PHP
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="checkbox-container">JavaScript
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="checkbox-container">Bootstrap
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+      </div>
+    </div>
+
+    <div class="col-half">
+      <div class="container" style="padding-top: 5px; box-shadow: 0 20px 35px rgba(0,0,0,0.15);">
+        <p><b>Custom Select</b></p>
+        <div class="custom-select" style="width:200px;">
+          <select>
+            <option value="0">Select car:</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+            <option value="3">Citroen</option>
+            <option value="4">Ford</option>
+            <option value="5">Honda</option>
+            <option value="6">Jaguar</option>
+            <option value="7">Land Rover</option>
+            <option value="8">Mercedes</option>
+            <option value="9">Mini</option>
+            <option value="10">Nissan</option>
+            <option value="11">Toyota</option>
+            <option value="12">Volvo</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="col-half">
+      <div class="container" style="padding-top:5px ; box-shadow: 0 20px 35px rgba(0,0,0,0.15);">
+        <p><b>Select Menu</b></p>
+        <select id="select" name="country">
+          <option value="au">Australia</option>
+          <option value="ca">Canada</option>
+          <option value="usa">USA</option>
+          </select>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+<!--------------------------------------Multiple Picker/Selector-------------------------------------->
+<br>
+<div class="container"style="background-color: white; margin:auto; box-shadow: 0 20px 35px rgba(0,0,0,0.15);">
+  <div class="row">
+    <div class="col-half">
+      <div class="container">
+        <h2>Multiple Selector</h2>
+        <select id="js-example-basic-multiple" multiple> 
+          <option>Web Design</option>
+          <option>Web Development</option>
+          <option>Graphic Design</option>
+          <option>UI/UX Design</option>
+          <option>Frontend Development</option>
+          <option>Backend Development</option>
+      </select>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--------------------------------------log in and sign up form-------------------------------------->
+
+<br>
+<h1 style="align-content: center;">Login & Sign Up Form</h1>
+<div class="row">
+  <div class="col-q">
+    <div class="container"style="background-color: white; margin:auto; box-shadow: 0 20px 35px rgba(0,0,0,0.15);">
+      
+      <form class="Form" style="align-items: center;">
+        <span class="Title">Log In</span>
+       <input id="file" type="file">
+          <input type="email" class="input" placeholder="Email">
+          <input type="password" class="input" placeholder="Password"> 
+          
+        <span class="sub">Create an Account? <a href="#">Sign Up</a></span>
+          <button id="btn">Log In</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-q">
+    <div class="container" style="background-color: white; margin:auto; box-shadow: 0 20px 35px rgba(0,0,0,0.15);">
+      <form class="Form" style="align-items: center;">
+        <span class="Title">Sign Up</span>
+       <input id="file" type="file">
+        <label class="avatar" for="file"><span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><g stroke-width="0" id="SVGRepo_bgCarrier"></g><g stroke-linejoin="round" stroke-linecap="round" id="SVGRepo_tracerCarrier"></g><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M17.1813 16.3254L15.3771 14.5213C16.5036 13.5082 17.379 12.9869 18.2001 12.8846C19.0101 12.7837 19.8249 13.0848 20.8482 13.8687C20.8935 13.9034 20.947 13.9202 21 13.9202V15.024C21 19.9452 19.9452 21 15.024 21H8.976C4.05476 21 3 19.9452 3 15.024V13.7522C3.06398 13.7522 3.12796 13.7278 3.17678 13.679L4.45336 12.4024C5.31928 11.5365 6.04969 10.8993 6.71002 10.4791C7.3679 10.0605 7.94297 9.86572 8.50225 9.86572C9.06154 9.86572 9.6366 10.0605 10.2945 10.4791C10.9548 10.8993 11.6852 11.5365 12.5511 12.4024L16.8277 16.679C16.9254 16.7766 17.0836 16.7766 17.1813 16.679C17.2789 16.5813 17.2789 16.423 17.1813 16.3254Z" opacity="0.1"></path> <path stroke-width="2" stroke="#ffffff" d="M3 8.976C3 4.05476 4.05476 3 8.976 3H15.024C19.9452 3 21 4.05476 21 8.976V15.024C21 19.9452 19.9452 21 15.024 21H8.976C4.05476 21 3 19.9452 3 15.024V8.976Z"></path> <path stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="M17.0045 16.5022L12.7279 12.2256C9.24808 8.74578 7.75642 8.74578 4.27658 12.2256L3 13.5022"></path> <path stroke-linecap="round" stroke-width="2" stroke="#ffffff" d="M21.0002 13.6702C18.907 12.0667 17.478 12.2919 15.1982 14.3459"></path> <path stroke-width="2" stroke="#ffffff" d="M17 8C17 8.55228 16.5523 9 16 9C15.4477 9 15 8.55228 15 8C15 7.44772 15.4477 7 16 7C16.5523 7 17 7.44772 17 8Z"></path> </g></svg></span></label>
+          <input type="text" class="input" placeholder="Username">
+          <input type="email" class="input" placeholder="Email">
+          <input type="password" class="input" placeholder="Password"> 
+          <input type="password" class="input" placeholder="Confirm Password"> 
+        <span class="sub">Already have an account ? <a href="#">Log in</a></span>
+          <button id="btn">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-q">
+    <div class="container"style="background-color: white; margin:auto; box-shadow: 0 20px 35px rgba(0,0,0,0.15);">
+      <form class="Form2">
+        <span class="Title">Log In</span>
+        <div class="flex-column">
+          <label>Email </label></div>
+          <div class="inputForm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 32 32" height="20"><g data-name="Layer 3" id="Layer_3"><path d="m30.853 13.87a15 15 0 0 0 -29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0 -1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1 -4.158-.759v-10.856a1 1 0 0 0 -2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zm-14.853 8.13a6 6 0 1 1 6-6 6.006 6.006 0 0 1 -6 6z"></path></g></svg>
+            <input placeholder="Enter your Email" class="Input" type="text">
+          </div>
+        
+        <div class="flex-column">
+          <label>Password </label></div>
+          <div class="inputForm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="-64 0 512 512" height="20"><path d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"></path><path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"></path></svg>        
+            <input placeholder="Enter your Password" class="Input" type="password">
+          </div>
+        
+        <div class="flex-row">
+          <div>
+          <input type="radio">
+          <label>Remember me </label>
+          </div>
+          <span class="span">Forgot password?</span>
+        </div>
+        <button class="button-submit">Sign In</button>
+        <p class="p">Don't have an account? <span class="span">Sign Up</span>
+    
+        </p><p class="p line">Or With</p>
+    
+        <div class="flex-row">
+          <button class="btn google">
+            <svg xml:space="preserve" style="enable-background:new 0 0 512 512;" viewBox="0 0 512 512" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="20" version="1.1">
+    <path d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
+        c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
+        C103.821,274.792,107.225,292.797,113.47,309.408z" style="fill:#FBBB00;"></path>
+    <path d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
+        c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535
+        c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z" style="fill:#518EF8;"></path>
+    <path d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
+        c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771
+        c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z" style="fill:#28B446;"></path>
+    <path d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
+        c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
+        C318.115,0,375.068,22.126,419.404,58.936z" style="fill:#F14336;"></path>
+    
+    </svg>
+       
+            Google 
+            
+          </button><button class="btn apple">
+    <svg xml:space="preserve" style="enable-background:new 0 0 22.773 22.773;" viewBox="0 0 22.773 22.773" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" width="20" height="20" version="1.1"> <g> <g> <path d="M15.769,0c0.053,0,0.106,0,0.162,0c0.13,1.606-0.483,2.806-1.228,3.675c-0.731,0.863-1.732,1.7-3.351,1.573 c-0.108-1.583,0.506-2.694,1.25-3.561C13.292,0.879,14.557,0.16,15.769,0z"></path> <path d="M20.67,16.716c0,0.016,0,0.03,0,0.045c-0.455,1.378-1.104,2.559-1.896,3.655c-0.723,0.995-1.609,2.334-3.191,2.334 c-1.367,0-2.275-0.879-3.676-0.903c-1.482-0.024-2.297,0.735-3.652,0.926c-0.155,0-0.31,0-0.462,0 c-0.995-0.144-1.798-0.932-2.383-1.642c-1.725-2.098-3.058-4.808-3.306-8.276c0-0.34,0-0.679,0-1.019 c0.105-2.482,1.311-4.5,2.914-5.478c0.846-0.52,2.009-0.963,3.304-0.765c0.555,0.086,1.122,0.276,1.619,0.464 c0.471,0.181,1.06,0.502,1.618,0.485c0.378-0.011,0.754-0.208,1.135-0.347c1.116-0.403,2.21-0.865,3.652-0.648 c1.733,0.262,2.963,1.032,3.723,2.22c-1.466,0.933-2.625,2.339-2.427,4.74C17.818,14.688,19.086,15.964,20.67,16.716z"></path> </g></g></svg>
+            Apple    
+    </button></div></form>
+    </div>
+  </div>
+
+
+  <div class="col-q">
+    <div class="container" style="background-color: white; margin:auto; box-shadow: 0 6px 7px 4px rgba(0, 0, 0, 0.188);">
+      <form class="Form2">
+        <span class="Title">Sign Up</span>
+        <div class="flex-column">
+          <label>Username </label></div>
+          <div class="inputForm">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
+						</svg> 
+            <input placeholder="Enter your name" class="Input" type="text">
+          </div>
+        <div class="flex-column">
+          <label>Email </label></div>
+          <div class="inputForm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 32 32" height="20"><g data-name="Layer 3" id="Layer_3"><path d="m30.853 13.87a15 15 0 0 0 -29.729 4.082 15.1 15.1 0 0 0 12.876 12.918 15.6 15.6 0 0 0 2.016.13 14.85 14.85 0 0 0 7.715-2.145 1 1 0 1 0 -1.031-1.711 13.007 13.007 0 1 1 5.458-6.529 2.149 2.149 0 0 1 -4.158-.759v-10.856a1 1 0 0 0 -2 0v1.726a8 8 0 1 0 .2 10.325 4.135 4.135 0 0 0 7.83.274 15.2 15.2 0 0 0 .823-7.455zm-14.853 8.13a6 6 0 1 1 6-6 6.006 6.006 0 0 1 -6 6z"></path></g></svg>
+            <input placeholder="Enter your Email" class="Input" type="text">
+          </div>
+        
+        <div class="flex-column">
+          <label>Password </label></div>
+          <div class="inputForm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="-64 0 512 512" height="20"><path d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"></path><path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"></path></svg>        
+            <input placeholder="Enter your Password" class="Input" type="password">
+          </div>
+
+          <div class="flex-column">
+            <label>Confirm Password </label></div>
+            <div class="inputForm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="-64 0 512 512" height="20"><path d="m336 512h-288c-26.453125 0-48-21.523438-48-48v-224c0-26.476562 21.546875-48 48-48h288c26.453125 0 48 21.523438 48 48v224c0 26.476562-21.546875 48-48 48zm-288-288c-8.8125 0-16 7.167969-16 16v224c0 8.832031 7.1875 16 16 16h288c8.8125 0 16-7.167969 16-16v-224c0-8.832031-7.1875-16-16-16zm0 0"></path><path d="m304 224c-8.832031 0-16-7.167969-16-16v-80c0-52.929688-43.070312-96-96-96s-96 43.070312-96 96v80c0 8.832031-7.167969 16-16 16s-16-7.167969-16-16v-80c0-70.59375 57.40625-128 128-128s128 57.40625 128 128v80c0 8.832031-7.167969 16-16 16zm0 0"></path></svg>        
+              <input placeholder="Confirm PassPassword" class="Input" type="password">
+            </div>
+        
+        <div class="flex-row">
+          <div>
+          <input type="radio">
+          <label>Remember me </label>
+          </div>
+          <span class="span">Forgot password?</span>
+        </div>
+        <button class="button-submit">Sign Up</button>
+        <p class="p">Already have an account? <span class="span">Sign In</span>
+    
+        </p><p class="p line">Or With</p>
+    
+        <div class="flex-row">
+          <button class="btn google">
+            <svg xml:space="preserve" style="enable-background:new 0 0 512 512;" viewBox="0 0 512 512" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Layer_1" width="20" version="1.1">
+    <path d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
+        c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
+        C103.821,274.792,107.225,292.797,113.47,309.408z" style="fill:#FBBB00;"></path>
+    <path d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
+        c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535
+        c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z" style="fill:#518EF8;"></path>
+    <path d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
+        c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771
+        c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z" style="fill:#28B446;"></path>
+    <path d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
+        c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
+        C318.115,0,375.068,22.126,419.404,58.936z" style="fill:#F14336;"></path>
+    
+    </svg>
+       
+            Google 
+            
+          </button><button class="btn apple">
+    <svg xml:space="preserve" style="enable-background:new 0 0 22.773 22.773;" viewBox="0 0 22.773 22.773" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" id="Capa_1" width="20" height="20" version="1.1"> <g> <g> <path d="M15.769,0c0.053,0,0.106,0,0.162,0c0.13,1.606-0.483,2.806-1.228,3.675c-0.731,0.863-1.732,1.7-3.351,1.573 c-0.108-1.583,0.506-2.694,1.25-3.561C13.292,0.879,14.557,0.16,15.769,0z"></path> <path d="M20.67,16.716c0,0.016,0,0.03,0,0.045c-0.455,1.378-1.104,2.559-1.896,3.655c-0.723,0.995-1.609,2.334-3.191,2.334 c-1.367,0-2.275-0.879-3.676-0.903c-1.482-0.024-2.297,0.735-3.652,0.926c-0.155,0-0.31,0-0.462,0 c-0.995-0.144-1.798-0.932-2.383-1.642c-1.725-2.098-3.058-4.808-3.306-8.276c0-0.34,0-0.679,0-1.019 c0.105-2.482,1.311-4.5,2.914-5.478c0.846-0.52,2.009-0.963,3.304-0.765c0.555,0.086,1.122,0.276,1.619,0.464 c0.471,0.181,1.06,0.502,1.618,0.485c0.378-0.011,0.754-0.208,1.135-0.347c1.116-0.403,2.21-0.865,3.652-0.648 c1.733,0.262,2.963,1.032,3.723,2.22c-1.466,0.933-2.625,2.339-2.427,4.74C17.818,14.688,19.086,15.964,20.67,16.716z"></path> </g></g></svg>
+    
+            Apple 
+            
+    </button></div></form>
+    </div>
+  </div>
+</div>
+<!--------------------------------------------------log in & sign up fomr end--------------------------------------------->
+
+<footer>
+  &copy; <em id="date"></em>2023 DhrutoSoft
+</footer><!--footer end-->
+</div>
+
+</main>
+</div>
+
+
+
+
+
+<!--------------------------------------------Scripts----------------------------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#multiple-select').select2();
+});
+</script>
+    <!--password verification <script>
+      var myInput = document.getElementById("psw");
+      var letter = document.getElementById("letter");
+      var capital = document.getElementById("capital");
+      var number = document.getElementById("number");
+      var length = document.getElementById("length");
+      
+      // When the user clicks on the password field, show the message box
+      myInput.onfocus = function() {
+        document.getElementById("message").style.display = "block";
+      }
+      
+      // When the user clicks outside of the password field, hide the message box
+      myInput.onblur = function() {
+        document.getElementById("message").style.display = "none";
+      }
+      
+      // When the user starts to type something inside the password field
+      myInput.onkeyup = function() {
+        // Validate lowercase letters
+        var lowerCaseLetters = /[a-z]/g;
+        if(myInput.value.match(lowerCaseLetters)) {
+          letter.classList.remove("invalid");
+          letter.classList.add("valid");
+        } else {
+          letter.classList.remove("valid");
+          letter.classList.add("invalid");
+      }
+      
+        // Validate capital letters
+        var upperCaseLetters = /[A-Z]/g;
+        if(myInput.value.match(upperCaseLetters)) {
+          capital.classList.remove("invalid");
+          capital.classList.add("valid");
+        } else {
+          capital.classList.remove("valid");
+          capital.classList.add("invalid");
+        }
+      
+        // Validate numbers
+        var numbers = /[0-9]/g;
+        if(myInput.value.match(numbers)) {
+          number.classList.remove("invalid");
+          number.classList.add("valid");
+        } else {
+          number.classList.remove("valid");
+          number.classList.add("invalid");
+        }
+      
+        // Validate length
+        if(myInput.value.length >= 8) {
+          length.classList.remove("invalid");
+          length.classList.add("valid");
+        } else {
+          length.classList.remove("valid");
+          length.classList.add("invalid");
+        }
+      }
+      
+      // When the user clicks on the password field, show the message box
+      var Confirm = document.getElementById("psw-repeat");
+      Confirm.onfocus = function() {
+        document.getElementById("message2").style.display = "block";
+      }
+      
+      // When the user clicks outside of the password field, hide the message box
+      Confirm.onblur = function() {
+        document.getElementById("message2").style.display = "none";
+      }
+      
+      function matchPassword() {  
+        var psw1 = document.getElementById("psw");  
+        var psw2 = document.getElementById("psw-repeat");  
+        if(psw1 != psw2)  
+        {   
+          alert("Passwords did not match");  
+        } else {  
+          alert("Password created successfully");  
+        }  
+      
+      
+      }
+      </script>-->
+    
+      <script>
+        jQuery(function($) {
+2
+  $('.radio-toggle').toggleInput();
+3
+});
+
+
+
+
+      </script>
+
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+    <script src="js/custom-select.js"></script>
+    <script src="js/dateofbirth.js"></script>
+    <script src="js/multiplepciker.js"></script>
+    <!--select picker-->
+   <script src="js/picker.min.js"></script>
+   <script type="text/javascript">
+    $(document).ready(function(){
+      $('#ex-search').picker({search : true});
+    });
+</script>
+
+
+    
+    <!--jquery for rafio button-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.toggleinput.js"></script>
+
+
+    <!--upload image-->
+    <script>
+      function previewImage(event) {
+      var reader = new FileReader();
+      reader.onload = function() {
+      var output = document.getElementById('preview-image');
+      output.src = reader.result;
+      document.getElementById('remove-image').style.display = 'inline';
+    }
+    reader.readAsDataURL(event.target.files[0]);
+  }
+
+  function removePreview() {
+  var output = document.getElementById('preview-image');
+  output.src = "images/Images-rafiki.png"
+  document.getElementById('upload-input').value = '';
+  document.getElementById('remove-image').style.display = 'none';}</script>
+
+
+<!-------------------------------upload Image---------------------->
+<script>
+  document.getElementById('upload-button').addEventListener('click', function() {
+    document.getElementById('image-input').click();
+  });
+
+  document.getElementById('image-input').addEventListener('change', function(e) {
+    var file = e.target.files[0];
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      var img = document.getElementById('uploaded-image');
+      img.src = e.target.result;
+      img.style.display = 'block';
+
+      document.getElementById('upload-button').style.display = 'none';
+      document.getElementById('edit-button').style.display = 'inline-block';
+    };
+
+    reader.readAsDataURL(file);
+  });
+
+  document.getElementById('edit-button').addEventListener('click', function() {
+    document.getElementById('image-input').click();
+  });
+
+
+  function openPreview() {
+      const previewContainer = document.querySelector('.preview-container');
+      previewContainer.style.display = 'flex';
+
+      const previewImage = document.getElementById('preview-image');
+      const uploadedImage = document.getElementById('uploaded-image');
+      previewImage.src = uploadedImage.src;
+    }
+
+    function closePreview() {
+      const previewContainer = document.querySelector('.preview-container');
+      previewContainer.style.display = 'none';
+    }
+
+    const uploadedImage = document.getElementById('uploaded-image');
+    uploadedImage.addEventListener('click', openPreview);
+</script>
+<script>
+  $("#ui-select-selectmenu").selectmenu();
+
+$("#ui-select-chosen").chosen({
+  width: "250px"
+});
+
+//$('#ui-select-selectric').selectric();
+
+var vm = {
+  nativeSelected: ko.observableArray(["Option 1"]),
+  availableOptions: ko.observableArray([
+    "",
+    "Option 1",
+    "Option 2",
+    "Option 3",
+    "Option 4",
+    "Option 5",
+    "Option 6"
+  ])
+};
+
+ko.applyBindings(vm);
+</script>
+
+<!--jquery link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        
+        
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('#js-example-basic-multiple').select2(); });
+</script>
+
+
+ 
+
+  </body>
+</html>

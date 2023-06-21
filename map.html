@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Map</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/map.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            DrutoSoft
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+        <!--sidebar items start-->
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="index.html" target="_blank" >
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">calendar_today</span> Calender
+            </a>
+          </li>
+          <li class="sidebar-list-item" style="background-color:#2c419e;">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined" >
+                location_on
+                </span> Map
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                widgets
+              </span> Widgets
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="form.html" target="_blank">
+              <span class="material-icons-outlined">
+                list_alt
+                </span> Form Elements
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">poll</span> Charts
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                table_chart
+                </span> Tables
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                verified_user
+                </span> Authentication
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                email
+                </span> Email Template
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">
+                auto_stories
+                </span> Extra Pages
+            </a>
+          </li>
+
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main-->
+      <main class="main-container">
+        <div class="container">
+            <h1 style="text-align: left;padding: 10px;font-family:'Poopins', 'sans-serif';">
+                Map
+            </h1>
+            <!--light mode map-->
+            <h2 style="text-align: left;padding: 10px;font-family:'Poopins', 'sans-serif';">Embed Map(Light mode)</h2>
+            <iframe id="light" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14608.039158573778!2d90.36556225157662!3d23.747030308759772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b33cffc3fb%3A0x4a826f475fd312af!2sDhanmondi%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1686121093605!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!--dark mode map-->
+            <h2 style="text-align: left;padding: 10px;font-family:'Poopins', 'sans-serif';">Embed Map(Dark Mode)</h2>
+            <iframe id="dark"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14608.039158573778!2d90.36556225157662!3d23.747030308759772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b33cffc3fb%3A0x4a826f475fd312af!2sDhanmondi%2C%20Dhaka%201205!5e0!3m2!1sen!2sbd!4v1686121093605!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+
+
+        <!--copywrite-->
+        <footer>
+            &copy; <em id="date"></em>2023 DhrutoSoft
+          </footer>
+      </main>
+    <!--End Main -->
+
+    </div>
+  
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
